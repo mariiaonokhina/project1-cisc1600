@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-content-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3f6f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+hr {
+    color: #272343;
+    width: 100%;
+}
+
+.homepage-content-card {
+    height: 55vh;
+    width: fit-content;
+    background-color: #fffffe;
+    padding: 5vw;
+    border-radius: 20px;
+    border: 5px solid #272343;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #272343;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #272343;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #272343;
+}
+
+h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #272343;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2d334a;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li {
+    margin-bottom: 2vh;
+}
+
+.class-website-link, .index-html-link {
+    background-color: #ffd803;
+    border-radius: 20px;
+    width: 10vw;
+    padding: 1vh 2vw;
+    text-align: center;
+}
+
+.class-website-link:visited, .index-html-link:visited {
+    color: #2d334a;
+}
+
+.list-item a {
+    color: #2d334a;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.list-item:visited {
+    color: #2d334a;
+}
+
+.list-item:hover {
+    text-decoration: underline;
+    font-size: large;
+}
+
+.aboutme-website-container {
+    background-color: #fffffe;
+    border: 5vw outset #bae8e8;
+}
+
+.aboutme-inner-container {
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.about-me-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.about-me-title {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3vh;
+}
+
+.about-me-info-container p {
+    width: 35vw;
+    transition: 0.2s;
+}
+
+.about-me-info-container p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.careers-title {
+    margin-bottom: 3vh;
+}
+
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-bottom: 3vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+th {
+    height: 5vh;
+    background-color: #bae8e8;
+}
+
+td, th {
+    padding: 3vh;
+}
+
+tr {
+    transition: 0.2s;
+}
+
+tr:hover {
+    cursor: pointer;
+    background-color: #ffd803;
+}
+
+.things-to-accomplish-container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+}
+
+.things-to-accomplish {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+.things-to-accomplish-item {
+    background-color: #e3f6f5;
+    min-height: 30vh;
+    min-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 2px solid #2d334a;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.things-to-accomplish-item:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
+.odd {
+    display: flex;
+    flex-direction: row;
+}
+
+.even {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.odd img, .even img {
+    max-width: 50vh;
+}
+
+/* Extra small devices (phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .class-website-link, .index-html-link {
+        border: 3px solid #2d334a;
+        color: #272343;
+    }
+
+    .class-website-link:active, .index-html-link:active {
+        transform: translateY(0);
+        border: 3px solid #2d334a;
+    }
+
+    .homepage-content-card {
+        width: 80vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (min-width: 600px) {
+    .homepage-content-card {
+        width: 70vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .homepage-content-card {
+        width: 65vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .class-website-link, .index-html-link {
+        border-bottom: 3px solid #2d334a;
+        width: 10vw;
+        font-size: large;
+        text-decoration: none;
+    }
+    
+    .class-website-link:active, .index-html-link:active {
+        transform: translateY(3px);
+        border-bottom: 1px solid #2d334a;
+    }
+    
+    .homepage-content-card {
+        width: 50vw;
+    }
+}
